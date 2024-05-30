@@ -1,0 +1,74 @@
+﻿<Window x:Class="Book_8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Book_8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="Name" Text="{DynamicResource Name}" Grid.Column="0"/>
+                <TextBox x:Name="Family" Text="{DynamicResource Family}" Grid.Column="1"/>
+                <TextBox x:Name="Record" Text="{DynamicResource Record}" Grid.Column="2"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.3*"/>
+                    <ColumnDefinition Width="0.3*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="{DynamicResource LocalRU}"  Grid.Column="0" Click="Button_Click_12"/>
+                <Button Content="{DynamicResource Local}"  Grid.Column="1" Click="Button_Click_11"/>
+                <Button Content="{DynamicResource Save}" Grid.Column="2" Click="Button_Click_8"/>
+                <Button Content="{DynamicResource Load}" Grid.Column="3" Click="Button_Click_9"/>
+                <Button Content="{DynamicResource Break}" Grid.Column="4" Click="Button_Click_10"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" x:Name="Tablo" FontFamily="Arial" FontSize="50" Text="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" FontFamily="Arial" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{DynamicResource Description}" TextWrapping="Wrap" />
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Button_x1" FontFamily="Arial" FontSize="25" Content="x1" Click="Button_Click"/>
+            <Button x:Name="Button_x2" Grid.Column="1" FontFamily="Arial" FontSize="25" Content="x2" Click="Button_Click_1"/>
+            <Button x:Name="Button_x3" Grid.Column="2" FontFamily="Arial" FontSize="25" Content="x3" Height="54" VerticalAlignment="Top" Click="Button_Click_2"/>
+            <Button x:Name="Button_x5" Grid.Column="3" FontFamily="Arial" FontSize="25" Content="x5" Click="Button_Click_3"/>
+            <Button x:Name="Button_x7" Grid.Column="4" FontFamily="Arial" FontSize="25" Content="x7" Click="Button_Click_4"/>
+            <Button x:Name="Button_x10" Grid.Column="5" FontFamily="Arial" FontSize="25" Content="x10" Click="Button_Click_5"/>
+            <Button x:Name="Button_x15" Grid.Column="6" FontFamily="Arial" FontSize="25" Content="x15" Click="Button_Click_6"/>
+            <Button x:Name="Button_x30" Grid.Column="7" FontFamily="Arial" FontSize="25" Content="x30" Click="Button_Click_7"/>
+        </Grid>
+    </Grid>
+</Window>
